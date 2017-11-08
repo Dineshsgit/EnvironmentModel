@@ -57,7 +57,7 @@ object TemparatureConditions {
         365 - AvgHighTempDay.getDayOfYear + datetime.getDayOfYear
       }
       TempOfDay = Amplitude * math.cos(((2 * math.Pi)/365)* DayPosition) + MeanValue
-      TempInDay = TempOfDay * 0.1 * math.cos(getTotalSecondsOfDay(datetime) * 2 * math.Pi / (24 * 3600)) * (-1)
+      TempInDay = TempOfDay * 0.1 * math.sin(getTotalSecondsOfDay(datetime) * 2 * math.Pi / (24 * 3600)) 
       println("Temperature : "+ TempOfDay)
       println("Temperature in Day :"+ (TempInDay + TempOfDay))
 
@@ -87,7 +87,7 @@ object TemparatureConditions {
         365 - AvgHighTempDay.getDayOfYear + datetime.getDayOfYear
       }
       TempOfDay = Amplitude * math.cos(((2 * math.Pi)/365)* DayPosition) + MeanValue
-      TempInDay = TempOfDay * 0.1 * math.cos(getTotalSecondsOfDay(datetime) * 2 * math.Pi / (24 * 3600)) * (-1)
+      TempInDay = TempOfDay * 0.1 * math.sin(getTotalSecondsOfDay(datetime) * 2 * math.Pi / (24 * 3600))
 
       println("Temperature : "+ TempOfDay)
       println("Temperature in Day :"+ (TempInDay + TempOfDay))
@@ -119,7 +119,7 @@ object TemparatureConditions {
         365 - AvgHighTempDay.getDayOfYear + datetime.getDayOfYear
       }
       TempOfDay = Amplitude * math.cos(((2 * math.Pi)/365)* DayPosition) + MeanValue
-      TempInDay = TempOfDay * 0.1 * math.cos(getTotalSecondsOfDay(datetime) * 2 * math.Pi / (24 * 3600)) * (-1)
+      TempInDay = TempOfDay * 0.1 * math.sin(getTotalSecondsOfDay(datetime) * 2 * math.Pi / (24 * 3600)) 
 
       println("Temperature : "+ TempOfDay)
       println("Temperature in Day :"+ (TempInDay + TempOfDay))
@@ -150,7 +150,7 @@ object TemparatureConditions {
         365 - AvgHighTempDay.getDayOfYear + datetime.getDayOfYear
       }
       TempOfDay = Amplitude * math.cos(((2 * math.Pi)/365)* DayPosition) + MeanValue
-      TempInDay = TempOfDay * 0.1 * math.sin((getTotalSecondsOfDay(datetime) ) * 2 * math.Pi / (24 * 3600)) * (-1)
+      TempInDay = TempOfDay * 0.1 * math.sin((getTotalSecondsOfDay(datetime) ) * 2 * math.Pi / (24 * 3600)) 
 
       println("Temperature : "+ TempOfDay)
 
