@@ -100,7 +100,6 @@ object EnvironmentalModel extends App {
     print.close()
 
   }
-  calculateVariables("C:/Desktop/WeatherInputs/InputFile_WeatherStationsData.txt", "2016-08-21 02:05:37", "C:/Desktop/WeatherInputs/WeatherOutput.dat")
-
+  
 
 }
