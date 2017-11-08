@@ -9,9 +9,9 @@ import java.time.format.{DateTimeFormatter, DateTimeParseException}
 
 
 /** Assumption : Temperature in day either increases or
-  *              decreases by 10 %  as the days passes by
+  *              decreases by 10 %  as every hour in a day passes 
   *              i.e as the day progresses from day to night temperature
-  *              decreases by 10% for each over. Whilst from day to night
+  *              decreases by 10% for each hour. Whilst from day to night
   *              temperature increases by 10% for every hour
   *
   */
