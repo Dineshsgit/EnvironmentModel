@@ -8,6 +8,8 @@ import java.time.format.DateTimeParseException
   * Created by xdvi2 on 8/11/2017.
   */
 object EnvironmentModelTest extends App{
+ 
+ val format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
 
   println("\nPlease enter an latitude of Locations : ")
   val loclatitude = scala.io.StdIn.readLine()
